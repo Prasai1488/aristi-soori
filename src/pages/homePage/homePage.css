@@ -1,0 +1,118 @@
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1683180731905-6617700224df?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFuJTIwdXNpbmclMjBwaG9uZXxlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.text-danger {
+  color: #ff3366 !important;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* QR Section Styles */
+.qr-section {
+    background-color: #fff;
+    padding: 80px 0;
+  }
+  
+  .qr-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .qr-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .learn-more-btn {
+    background: none;
+    border: none;
+    color: #ff3366;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    transition: gap 0.3s ease;
+  }
+  
+  .learn-more-btn:hover {
+    gap: 12px;
+  }
+  
+  .learn-more-btn span {
+    font-size: 1.2rem;
+  }
+  
+  .qr-image-container {
+    position: relative;
+    padding: 20px;
+  }
+  
+  .qr-image {
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .qr-image:hover {
+    transform: translateY(-10px);
+  }
+  
+  @media (max-width: 991px) {
+    .qr-content {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  
+    .learn-more-btn {
+      margin: 0 auto;
+      justify-content: center;
+    }
+  
+    .qr-title {
+      font-size: 2rem;
+    }
+  }
