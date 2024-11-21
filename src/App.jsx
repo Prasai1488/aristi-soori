@@ -5,10 +5,12 @@ import HomePage from "./pages/homePage/HomePage";
 
 const App = () => {
   return (
-    <div>
+    <div className="app-container">
       <Header />
-      <HomePage/>
-      
+      <main className="main-content">
+        <HomePage />
+      </main>
+      <Footer />
     </div>
   );
 };
